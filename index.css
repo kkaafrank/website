@@ -1,0 +1,258 @@
+﻿/*
+
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav {
+    background-color: #579ccf;
+    list-style-type: none;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+}
+
+.navItem {
+    float: left;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    transition: color ease-in .2s;
+}
+
+.navLink:hover{
+    color: #b1b1b1;
+    text-decoration: underline;
+}
+
+#currentPage{
+    text-decoration: underline;
+}
+
+.welcome {
+    display: table;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url('./images/great_wall.jpg') no-repeat scroll center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    color: white;
+    padding-top: 20%;
+    font-size: 3em;
+}
+
+.banner {
+    text-align: center;
+}
+
+#aboutHeader {
+    padding-top: 2em;
+}
+
+.aboutPara {
+    font-size: 1.5em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align:center;
+}
+
+.aboutBlock{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+#resumeHeader{
+    padding-top: 3em;
+}
+
+.resumeBlock{
+    text-align: center;
+}
+
+#hobbiesHeader{
+    padding-top:2em;
+}
+
+#bottomPadding {
+    clear: left;
+    height: 5em;
+}
+
+.padding {
+    clear: left;
+    height: 3em;
+}
+
+#resume{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.aboutBlock a:visited {
+    color: black;
+}
+
+.aboutBlock a:link {
+    color: black;
+}
+
+#toTopButton{
+    clear: left;
+    text-align: right;
+    margin-right: 3em;
+    margin-top: 1em;
+    font-size: 1.5em;
+    padding: 2em 0em 1em 0em;
+}
+
+#toTopButton a:link{
+    color: lightgrey;
+    text-decoration: none;
+}
+
+#toTopButton a:visited{
+    color: lightgrey;
+}
+
+.horizontalBar{
+    height: 2px;
+    color: black;
+    background-color: black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.hobbyButton {
+    border: 0px;
+    outline: none;
+    max-width: 70%;
+    margin-bottom: 2em;
+    box-shadow: none;
+}
+
+.hobbyButton img{
+    width: 100%;
+    height: auto;
+}
+
+.hobbyButton:hover{
+    cursor: pointer;
+}
+
+.hobbyButton:hover img{
+    opacity: .8;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,.3)
+}
+
+.modal-content{
+    background-color: #f1f1f1;
+    margin: 15% auto auto auto;
+    padding: 2em;
+    width: 60%;
+    border-radius: 20px;
+
+    animation-name: modalOpen;
+    animation-duration: .6s;
+}
+
+.closeModal {
+    float: right;
+    font-size: 2.5em;
+    color: #575757;
+    margin-top: -13px;
+}
+
+.closeModal:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+.modalHeader{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.modalText{
+    font-size: 1.5em;
+}
+
+.footer{
+    background-color: black;
+    color: lightgrey;
+    text-align:center;
+}
+
+.contact{
+    padding-top: 2em;
+}
+
+.contactHeader{
+    padding-bottom: .7em;
+    font-size: 2em;
+}
+
+.contactInfo{
+    font-size: 1.25em;
+}
+
+.socialHeader{
+    font-size:2em;
+    padding-bottom: .7em;
+}
+
+.socialBubbles{
+
+}
+
+.socialLink {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    border-color: grey;
+    border: 2px solid;
+    text-decoration: none;
+    padding: .25em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: lightgray;
+    margin: 0em .25em;
+}
+
+@keyframes modalOpen {
+    from {opacity: 0}
+    to {opacity: 1}
+}
